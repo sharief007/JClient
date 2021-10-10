@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.openjfx.jclient.controllers.ApplicationController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+<!--                  <Menu mnemonicParsing="false" text="New Client">-->
+<!--                    <items>-->
+<!--                      <MenuItem mnemonicParsing="false" onAction="#createAndOpenHttpClient" text="HttpClient" />-->
+<!--                        <MenuItem mnemonicParsing="false" onAction="#createAndOpenWebSocketClient" text="Websocket" />-->
+<!--                    </items>-->
+<!--                  </Menu>-->
+                  <MenuItem mnemonicParsing="false" onAction="#createAndOpenPulsarClient" text="New Pulsar Client" />
+<!--                  <MenuItem mnemonicParsing="false" onAction="#createAndOpenWebSocketClient" text="New WebSocket Client" />-->
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeTab" text="Close Tab" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeAllTabs" text="Close all tabs" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#quit" text="quit" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+      </MenuBar>
+   </top>
+   <center>
+      <TabPane fx:id="APPLICATION_TABS" prefHeight="469.0" prefWidth="735.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
