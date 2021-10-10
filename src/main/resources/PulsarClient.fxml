@@ -12,7 +12,7 @@
             <HBox fx:id="HEADER" spacing="5.0" HBox.hgrow="ALWAYS">
                <children>
                   <ComboBox fx:id="AUTH" promptText="Auth" />
-                  <TextField fx:id="SERVICE_URL" onAction="#connect" promptText="Service URL" text="pulsar://localhost:6650" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="SERVICE_URL" onAction="#connect" promptText="Service URL" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
             <Button fx:id="CONNECT" mnemonicParsing="false" onAction="#connect" text="Connect" />
@@ -34,7 +34,7 @@
                         <HBox fx:id="PRODUCER" alignment="CENTER" spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
                               <ComboBox promptText="Settings" fx:id="PSETTINGS"/>
-                              <TextField fx:id="TOPIC_NAME" promptText="Topic Name" text="my-topic" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="TOPIC_NAME" promptText="Topic Name" HBox.hgrow="ALWAYS" />
                            </children>
                         </HBox>
                         <Button fx:id="PRODUCERBTN" mnemonicParsing="false" onAction="#createProducer" text="Create Producer" />
@@ -98,8 +98,8 @@
                         <HBox fx:id="SUBSCRIBER" alignment="CENTER" spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
 <!--                              <ComboBox fx:id="SSETTINGS" promptText="Settings" />-->
-                              <TextField fx:id="TOPIC_NAME_2" promptText="Topic Name" text="my-topic" HBox.hgrow="ALWAYS" />
-                              <TextField fx:id="SUBSCRIPTION" layoutX="87.0" layoutY="15.0" promptText="Subscription Name" text="subs" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="TOPIC_NAME_2" promptText="Topic Name" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="SUBSCRIPTION" layoutX="87.0" layoutY="15.0" promptText="Subscription Name" HBox.hgrow="ALWAYS" />
                            </children>
                         </HBox>
                         <Button fx:id="SUBSCRIBERBTN" mnemonicParsing="false" onAction="#subscribe" text="Subscribe" />
